@@ -1,183 +1,121 @@
-## Deployment: Vercel
+# 🚀 Yeet Aurify to Vercel 
 
-Aurify can be deployed easily to Vercel:
+yo gurt, we finna make this app touch grass (aka the internet). steps ez frfr nocap:  
 
-1. Go to https://vercel.com and sign in with your GitHub account.
-2. Click "New Project" and import the Aurify repository.
-3. Set up environment variables in the Vercel dashboard (Settings > Environment Variables).
-4. Click "Deploy". Vercel will build and host your app automatically.
+1. go to [vercel.com](https://vercel.com) → sign in w ur github.  
+2. swiss-cheese **New Project** wit da glicky.  
+3. import Aurify repo. 💅  
+4. go to Settings → Environment Variables → sprinkle in ur API keys.  
+5. smash **Deploy** ;).  
+6. sit back, ✨ be gae and shiz ✨.  
 
-Every push to `main` (or any branch you choose) will trigger a new deployment. Pull requests get their own preview URLs.
+now every time u `git push` to `main` vercel is like “omw bb” and redeploys. PRs? get their own lil preview link so u can show off to the squad.
 
 ---
 
-## Tech Stack (Aurify)
+# 🛠 giga-chad tech stack (aurify edition)
 
-When the app is finished, Aurify will use:
+aurify be cooking frfr yo wit da modern web dev seasoning blend:  
 
-- **Frontend:** React, Vite, TypeScript, shadcn-ui, Tailwind CSS
-- **State Management:** React Context, custom hooks
-- **Authentication:** Firebase Auth (or similar)
-- **AI Services:** Google Gemini API, custom feedback services
-- **Backend (optional):** Firebase, or custom Node.js/Express server (if needed)
-- **Deployment:** Vercel (recommended), Netlify, or similar
-- **Testing:** Jest, React Testing Library (if added)
-- **CI/CD:** GitHub Actions (optional)
+- **frontend:** react + vite + typescript + shadcn-ui + tailwind css (slaps)  
+- **state mgmt:** react context + custom hooks (ur neurons but digital)  
+- **auth:** firebase auth (or whatever u wanna plug in)  
+- **ai sauce:** google gemini api + ✨ spicy feedback magic ✨  
+- **backend (optional):** firebase OR that node.js/express chaos kitchen  
+- **deploy:** vercel (main bae), netlify (side bae)  
+- **testing:** jest + react testing library (if ur not lazy)  
+- **ci/cd:** github actions (for the control freaks)  
 
-This stack is modern, scalable, and easy for contributors to work with.
-## Intern Onboarding & Contribution Tutorial
+---
 
-To ensure code quality and prevent accidental changes to the main repository, all interns should work on their own forks. Here’s how to get started:
+# 🧃 intern onboarding (yo we tesla ong frfr)
 
-### 1. Fork the Repository
+ur about to touch the repo (no diddy). pls dont brick it:  
 
-Go to the main Aurify repo (e.g., https://github.com/Aurify-AI/Aurify) and click the "Fork" button at the top right. This will create a personal copy of the repo under your GitHub account.
+## 1. fork the repo
+hit that **Fork** button like its Sweeny.  
 
-### 2. Clone Your Fork
-
-Copy the URL of your fork (e.g., https://github.com/<your-username>/Aurify.git) and run:
+## 2. clone ur fork
 ```sh
-git clone https://github.com/<your-username>/Aurify.git
+git clone https://github.com/<ur-username>/Aurify.git
 cd Aurify
 ```
 
-### 3. Set Up the Project
+## 3. set up the project
+`npm install` → manifest your dev server into existence.  
 
-Follow the setup instructions in the README to install dependencies and run the project locally.
-
-### 4. Make Changes on a Branch
-
-Create a new branch for each feature or fix:
+## 4. make changes on a branch
 ```sh
-git checkout -b feature/my-feature
-```
-Make your changes and commit them:
-```sh
+git checkout -b feature/my-vibe
+# commit ur chaos
 git add .
-git commit -m "Describe your changes"
+git commit -m "did something kinda fire"
 ```
 
-### 5. Push Changes to Your Fork
-
+## 5. push ur branch
 ```sh
-git push origin feature/my-feature
+git push origin feature/my-vibe
 ```
 
-### 6. Open a Pull Request
+## 6. open a PR
+go to github → click “compare & pull request” → type smth based lwky so papi merges it.  
 
-Go to your fork on GitHub, and you’ll see a “Compare & pull request” button. Click it to open a PR against the main Aurify repo. Add a clear description of your changes.
-
-### 7. Review & Merge
-
-Your PR will be reviewed by a maintainer. Once approved, it will be merged into the main repo.
+## 7. review & merge
+maintainer says “slayyyy” → merges → ur code is now canon.  
 
 ---
 
-**Best Practices:**
-- Always work on a branch, never on `main`.
-- Keep your fork up to date by syncing with the upstream repo regularly.
-- Ask questions and request reviews if you’re unsure about anything.
+# 📜 best practices (aka how to not get roasted)
 
-This workflow keeps the main repo safe and ensures everyone’s work is reviewed before merging.
-# Aurify
+- **never** code directly on `main` (rawdogging prod is a crime).  
+- sync ur fork or enjoy merge conflict purgatory.  
+- ask q’s if confused. no one is born knowing git (except maybe linus).  
 
-Aurify is a modern web application designed to help users practice, learn, and engage with AI-powered feedback and community features. Built with React, Vite, TypeScript, shadcn-ui, and Tailwind CSS, Aurify offers a sleek, interactive experience for users interested in language learning, productivity, or other AI-driven tasks.
+---
 
-## What does Aurify do?
+# 🌐 aurify lore dump
 
-Aurify provides:
-- AI-powered feedback and suggestions (using Google Gemini and other services)
-- Community features for sharing and tracking progress
-- Practice sessions and history tracking
-- Authentication and user profiles
-- Responsive design for mobile and desktop
+aurify does:  
+- ai-powered feedback (gemini be like: “try again bestie”)  
+- community posting + tracking ur glow up  
+- practice sessions + receipts  
+- auth + profiles so ur stuff is actually urs  
+- mobile + desktop vibes (responsive like ur crush’s texts... hopefully)  
 
-## How to run Aurify after you fork
+---
 
-After forking the repository, follow these steps to get Aurify running locally:
+# 🖥 how to run aurify after fork
 
-1. **Clone your fork**
-	```sh
-	git clone <YOUR_FORK_URL>
-	cd aurify
-	```
-2. **Install dependencies**
-	```sh
-	npm install
-	```
-3. **Set up environment variables**
-	- If you plan to use Firebase or AI services, create a `.env` file in the root directory and add your API keys and config. Example:
-	  ```env
-	  VITE_FIREBASE_API_KEY=your_firebase_api_key
-	  VITE_GEMINI_API_KEY=your_gemini_api_key
-	  ```
-	- Check `src/lib/firebase.ts` and `src/services/ai/geminiService.ts` for required variables.
-4. **Start the development server**
-	```sh
-	npm run dev
-	```
-	The app will be available at `http://localhost:5173` (or as shown in your terminal).
-
-## Technologies Used
-
-Aurify is built with:
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## Deployment
-
-You can deploy Aurify using Vercel, Netlify, or any static hosting provider. 
-
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. 
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
+1. **clone it**
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+git clone <YOUR_FORK_URL>
+cd aurify
 ```
 
-**Edit a file directly in GitHub**
+2. **install deps**
+```sh
+npm install
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+3. **env vars or bust**
+make `.env` w ur keys:
+```env
+VITE_FIREBASE_API_KEY=ur_mom
+VITE_GEMINI_API_KEY=ur_dad
+```
 
-**Use GitHub Codespaces**
+4. **run the dev server**
+```sh
+npm run dev
+```
+open `http://localhost:5173` → bask in ur creation.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+# 🛠 tech recap (bc i forgot already)
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
+- vite  
+- typescript  
+- react  
+- shadcn-ui  
+- tailwind css  
