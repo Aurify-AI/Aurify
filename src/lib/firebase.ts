@@ -1,17 +1,17 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAuth, GoogleAuthProvider, signInWithPopup, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "firebase/auth";
+import { FirebaseApp, FirebaseError, initializeApp } from "firebase/app";
+import { getAuth, GoogleAuthProvider, signInWithPopup, signInWithEmailAndPassword, createUserWithEmailAndPassword, Auth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
-// Your web app's Firebase configuration
+// Your web app's Firebase configuration, pulls from `.env` file.
 const firebaseConfig = {
-  apiKey: "AIzaSyBVHVWjYRuVi9V2cALs1LiFUsMUQ5IeZ8w",
-  authDomain: "aurify-b5063.firebaseapp.com",
-  projectId: "aurify-b5063",
-  storageBucket: "aurify-b5063.firebasestorage.app",
-  messagingSenderId: "40871614302",
-  appId: "1:40871614302:web:0ffa2d7aad96553523e1cf",
-  measurementId: "G-V9Q9922X7P"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
