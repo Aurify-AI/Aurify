@@ -28,7 +28,7 @@ export enum ServiceType {
 }
 
 interface BookingSession {
-  sessionId: string;
+  sessionName: string;
   owner: string;
   participantIds: string[];
   status: string;
